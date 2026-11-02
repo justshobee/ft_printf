@@ -6,16 +6,16 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 10:00:39 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 12:34:28 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:27:59 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_print_ptr(void *ptr)
+int	ft_print_ptr(void *ptr)
 {
-	unsigned long p;
-	int		count;
+	unsigned long	p;
+	int				count;
 
 	if (ptr == NULL)
 		return (ft_print_str("(nil)"));

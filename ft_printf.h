@@ -6,7 +6,7 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 19:35:08 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 10:17:04 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:29:38 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,11 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include "libft.h"
-#include <stdio.h> // dont forget this
 
 int		ft_printf(const char *fmt, ...);
 int		ft_dispatch(char c, va_list list);
 int		ft_print_char(int c);
-int		ft_print_percent();
+int		ft_print_percent(void);
 int		ft_print_str(char *s);
 int		ft_print_base(unsigned long n, char *base);
 int		ft_print_int(int nbr);

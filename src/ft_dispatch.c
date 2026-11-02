@@ -6,13 +6,13 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 19:07:45 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 10:09:24 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:25:22 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_dispatch(char c, va_list list)
+int	ft_dispatch(char c, va_list list)
 {
 	if (c == 'c')
 		return (ft_print_char((char)va_arg(list, int)));

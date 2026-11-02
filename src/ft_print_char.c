@@ -6,18 +6,18 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 20:29:33 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 09:25:03 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:27:04 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_print_char(int c)
+int	ft_print_char(int c)
 {
 	return (write(1, &c, 1));
 }
 
-int		ft_print_percent()
+int	ft_print_percent(void)
 {
 	return (ft_print_char('%'));
 }

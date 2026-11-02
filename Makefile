@@ -6,7 +6,7 @@
 #    By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/02 11:50:57 by mochoubi          #+#    #+#              #
-#    Updated: 2026/11/02 12:27:20 by mochoubi         ###   ########.fr        #
+#    Updated: 2026/11/02 13:49:44 by mochoubi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME		= libftprintf.a
@@ -38,7 +38,7 @@ $(NAME): $(LIBFT) $(OBJS)
 	cp $(LIBFT) $(NAME)
 	$(AR) $(NAME) $(OBJS)
 
-$(LIBFT): FORCE
+$(LIBFT):
 	$(MAKE) -C $(LIBFT_DIR)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c ft_printf.h
@@ -55,7 +55,5 @@ fclean: clean
 
 re: fclean all
 
-FORCE:
-
-.PHONY: all clean fclean re FORCE
-
+.PHONY: all clean fclean re
+.SECONDARY: $(OBJS)

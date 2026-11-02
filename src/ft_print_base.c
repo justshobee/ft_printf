@@ -6,17 +6,17 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 09:41:45 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 10:32:08 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:26:20 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_print_base(unsigned long n, char *base)
+int	ft_print_base(unsigned long n, char *base)
 {
 	unsigned long	div;
-	int		count;
-	int		blen;
+	int				count;
+	int				blen;
 
 	div = 1;
 	count = 0;
@@ -32,7 +32,7 @@ int		ft_print_base(unsigned long n, char *base)
 	return (count);
 }
 
-int		ft_print_hex(unsigned int n, char c)
+int	ft_print_hex(unsigned int n, char c)
 {
 	if (c == 'x')
 		return (ft_print_base((unsigned long)n, "0123456789abcdef"));

@@ -6,13 +6,13 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 20:37:01 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 09:19:29 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:28:21 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		ft_print_str(char *s)
+int	ft_print_str(char *s)
 {
 	int		i;
 

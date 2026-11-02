@@ -6,7 +6,7 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 18:48:27 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/01 19:07:25 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 09:31:19 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_printf(const char *fmt, ...)
 			i++;
 		}
 		else
-			count++;
+			count += ft_print_char(s[i]);
 		i++;
 	}
 	return (count);

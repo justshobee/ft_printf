@@ -6,7 +6,7 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 19:07:45 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 14:25:22 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 17:35:52 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ int	ft_dispatch(char c, va_list list)
 	else if (c == 'p')
 		return (ft_print_ptr(va_arg(list, void *)));
 	else
-		return (0);
+		return (ft_print_char('%') + ft_print_char(c));
 }

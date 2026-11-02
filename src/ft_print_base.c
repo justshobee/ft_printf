@@ -6,13 +6,13 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 09:41:45 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 14:26:20 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 17:48:39 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_base(unsigned long n, char *base)
+int	ft_print_base(unsigned long n, const char *base)
 {
 	unsigned long	div;
 	int				count;

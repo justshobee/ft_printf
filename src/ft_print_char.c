@@ -6,7 +6,7 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 20:29:33 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 14:27:04 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/02 17:39:37 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int	ft_print_char(int c)
 {
-	return (write(1, &c, 1));
+	char	uc;
+
+	uc = (unsigned char)c;
+	return (write(1, &uc, 1));
 }
 
 int	ft_print_percent(void)

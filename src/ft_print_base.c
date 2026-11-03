@@ -6,11 +6,23 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 09:41:45 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 17:48:39 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/03 09:08:20 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	if (s == NULL)
+		return (i);
+	while (s[i] != '\0')
+		i++;
+	return (i);
+}
 
 int	ft_print_base(unsigned long n, const char *base)
 {

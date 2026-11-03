@@ -1,9 +1,10 @@
 #include "ft_printf.h"
-#include <stdio.h>
 
-int		main()
+int	main(void)
 {
-	 int n1 = ft_printf("abd%k\n");
-	 int n2 = printf("abd%k\n");
-	printf("n1 = %d, n2 = %d\n", n1, n2);
+	int	count;
+
+	count = ft_printf("Hello %s, you are %d years old (0x%x)\n", "Mo", 20, 255);
+	ft_printf("%d characters were printed\n", count);
+	return (0);
 }

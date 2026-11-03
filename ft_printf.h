@@ -16,7 +16,7 @@
 # include <unistd.h>
 
 int		ft_printf(const char *s, ...);
-size_t		ft_strlen(const char *s);
+size_t  ft_strlen(const char *s);
 int		ft_dispatch(char c, va_list list);
 int		ft_print_char(int c);
 int		ft_print_percent(void);

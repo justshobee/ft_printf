@@ -6,11 +6,25 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 19:07:45 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 17:35:52 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/04 15:46:35 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+static int	ft_print_unknown(char c)
+{
+	int	a;
+	int	b;
+
+	a = ft_print_char('%');
+	if (a == -1)
+		return (-1);
+	b = ft_print_char(c);
+	if (b == -1)
+		return (-1);
+	return (a + b);
+}
 
 int	ft_dispatch(char c, va_list list)
 {
@@ -28,6 +42,5 @@ int	ft_dispatch(char c, va_list list)
 		return (ft_print_hex(va_arg(list, unsigned int), c));
 	else if (c == 'p')
 		return (ft_print_ptr(va_arg(list, void *)));
-	else
-		return (ft_print_char('%') + ft_print_char(c));
+	return (ft_print_unknown(c));
 }

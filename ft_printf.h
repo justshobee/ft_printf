@@ -6,7 +6,7 @@
 /*   By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 19:35:08 by mochoubi          #+#    #+#             */
-/*   Updated: 2026/11/02 17:54:23 by mochoubi         ###   ########.fr       */
+/*   Updated: 2026/11/04 15:45:43 by mochoubi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 
 int		ft_printf(const char *s, ...);
-size_t  ft_strlen(const char *s);
 int		ft_dispatch(char c, va_list list);
 int		ft_print_char(int c);
 int		ft_print_percent(void);

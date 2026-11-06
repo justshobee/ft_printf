@@ -15,14 +15,20 @@
 int	ft_print_str(char *s)
 {
 	int		i;
+	int		count;
+	int		re;
 
 	if (s == NULL)
 		return (write(1, "(null)", 6));
 	i = 0;
+	count = 0;
 	while (s[i])
 	{
-		ft_print_char(s[i]);
+		re = ft_print_char(s[i]);
+		if (re == -1)
+			return (-1);
+		count += re;
 		i++;
 	}
-	return (i);
+	return (count);
 }

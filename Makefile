@@ -6,7 +6,7 @@
 #    By: mochoubi <mochoubi@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/11/02 11:50:57 by mochoubi          #+#    #+#              #
-#    Updated: 2026/11/03 08:58:38 by mochoubi         ###   ########.fr        #
+#    Updated: 2026/11/02 17:42:14 by mochoubi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 NAME		= libftprintf.a
@@ -26,7 +26,6 @@ SRCS		= $(SRC_DIR)/ft_printf.c \
 			  $(SRC_DIR)/ft_print_str.c \
 			  $(SRC_DIR)/ft_print_nbr.c \
 			  $(SRC_DIR)/ft_print_base.c \
-			  $(SRC_DIR)/ft_strlen.c \
 			  $(SRC_DIR)/ft_print_ptr.c
 
 OBJS		= $(SRCS:$(SRC_DIR)/%.c=$(OBJ_DIR)/%.o)
